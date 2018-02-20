@@ -1,0 +1,64 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>The tictactoe game</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower"/>
+<link rel="stylesheet" href="./tictactoe.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
+<script src="./tictactoe.js" async></script>
+</head>
+<body>
+<div id="schet">Player 1: 0 Player 2: 0</div>
+<div class="outer container">
+  <div class="selector text-center">
+    Game type:
+    <div>
+      <span id="pc">vs <i class="material-icons">computer</i></span>
+      <span id="human">vs <i class="material-icons">pregnant_woman</i></span>
+    </div>
+  </div>
+  
+  <div class="selectorxo text-center">
+    Player 1:
+    <div>
+    <span id="x">X</span>
+    <span id="o">O</span>
+    </div>
+  </div>
+  
+  <div id="grid">
+    <div class="row">
+      <div id="t1" class="col-4 tile th tiletop tileleft"></div>
+      <div id="t2" class="col-4 tile th tiletop"></div>
+      <div id="t3" class="col-4 tile th tiletop tileright"></div>
+    </div>
+    <div class="row">
+      <div id="t4" class="col-4 tile th tileleft"></div>
+      <div id="t5" class="col-4 tile th"></div>
+      <div id="t6" class="col-4 tile th tileright"></div>
+    </div>
+    <div class="row">
+      <div id="t7" class="col-4 tile th tileleft tilebot"></div>
+      <div id="t8" class="col-4 tile th tilebot"></div>
+      <div id="t9" class="col-4 tile th tileright tilebot"></div>
+    </div>
+  </div>
+</div>
+<div id="players" class="row">
+  <div class="col-2"></div>
+  <div id="turnpl1" class="col-2 text-center">
+    Player 1 turn
+  </div>
+  <div class="col-4"></div>
+  <div id="turnpl2" class="col-2 text-center">
+    Player 2 turn
+  </div>
+  <div class="col-2"></div>
+</div>
+<div id="alertwin">
+  Oh my god! It's a draw!
+</div>
+</body>
+</html>
